@@ -1,0 +1,6 @@
+suites:
+    buzz_suite:
+        //namespace: Buzz\Core
+        //psr4_prefix: Buzz\Core
+        src_path: %paths.config%/src
+        spec_path: %paths.config%/tests/spec

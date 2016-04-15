@@ -1,0 +1,123 @@
+//posts
+.post-list{
+  border-radius: 5px;
+  background-color: lighten($body-bg, 1.7);
+  .post{
+
+    padding: 7px;
+    border-bottom: 10px solid #FAFAFA;
+    .page-header{
+      h1{
+
+      }
+    }
+
+    .thumbnail{
+      border: none;
+      background-color: transparent;
+      img{
+
+      }
+    }
+  }
+}
+//post-details
+.post-details{
+  background-color: white;
+  padding: 7px;
+  .thumbnail{
+    border: none;
+    background-color: transparent;
+  }
+}
+//banners
+%topic-banner-name{
+  color: #AF0A0F;
+  display: block;
+  font-family: Tahoma,sans-serif;
+  font-size: $font-size-base *1.75;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-top: 0px;
+}
+%topic-banner-image{
+  width: 350px;
+  height: 150px;
+}
+%topic-banner{
+  text-align: center;
+  padding-bottom: 7px;
+}
+//welcome-banner
+.welcome-banner{
+  @extend %topic-banner;
+  .title{
+    font-weight: bold;
+    color: $gray-light;
+    letter-spacing: -1px;
+    font-family: tahoma;
+  }
+  .intro{
+    color: $gray-light;
+    font-family: times new roman, serif;
+    letter-spacing: -1px;
+    font-size: 18px;
+  }
+  img{
+    @extend %topic-banner-image;
+  }
+  .topic{
+    @extend %topic-banner-name;
+  }
+  
+}
+//topic-banner
+.topic-banner{
+  @extend %topic-banner;
+  img{
+    @extend %topic-banner-image;
+  }
+  .topic{
+    @extend %topic-banner-name;
+  }
+}
+//topics
+.topic-list{
+  border-bottom: 1px solid $hr-border;
+  padding: 5px 0;
+  background-color: white;
+
+  .topic{
+    &:hover{
+      text-decoration: none;
+      transform: translate(0, -3px) rotate(320deg);;
+    }
+
+    background-color: #fe0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 13px 0 0 0;
+    box-shadow: 0.8px 0.8px 0.2px #ccc;
+
+    text-align: center;
+    font-family: "Arial Black", sans-serif;
+    margin: 2px 0px;
+    display: inline-block;
+    transform: rotate(320deg);
+    color: #000;
+    font-size: $font-size-base*1.27;
+    font-weight: bolder;
+  }
+}
+//logo
+.logo{
+  .thumbnail{
+    border: none;
+    margin-top: 20px;
+    img{
+      width:45%;
+      height:auto;
+    }
+  }
+}
